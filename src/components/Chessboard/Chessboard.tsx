@@ -1,5 +1,4 @@
-import React from "react"
-
+import Square from "../Square/Square"
 import "./Chessboard.css"
 
 const files = ["a", "b", "c", "d", "e", "f", "g", "h"]
@@ -9,16 +8,16 @@ export default function Chessboard() {
   let board = []
 
   for (let i = ranks.length - 1; i >= 0; i--) {
-    let squareColour = (i % 2 == 0) ? "hotpink" : "pink";
     for (let j = 0; j < files.length; j++) {
-      board.push(<div className={`square ${squareColour}`}>{files[i]}{ranks[j]}</div>)
-      squareColour = (squareColour === "pink") ? "hotpink" : "pink"
+      board.push(<Square number={i + j} name={`${files[j]}${ranks[i]}`} />)
     }
   }
 
   return (
-    <div className="chessboard">
-      {board}
+    <div className="chessboard-border">
+      <div className="chessboard">
+        {board}
+      </div>
     </div>
   )
 }
