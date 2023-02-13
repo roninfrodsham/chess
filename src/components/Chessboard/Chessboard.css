@@ -1,13 +1,15 @@
 .chessboard-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 2%;
-  background-color: darkorange;
+  background-color: #495b75;
 }
 
 .chessboard {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(8, 12.5%);
@@ -20,9 +22,9 @@
 }
 
 .light {
-  background-color: lightgray;
+  background-color: #aecdfe;
 }
 
 .dark {
-  background-color: gray;
+  background-color: #5390f4;
 }

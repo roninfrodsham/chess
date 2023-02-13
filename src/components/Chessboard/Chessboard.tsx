@@ -9,7 +9,8 @@ export default function Chessboard() {
 
   for (let i = ranks.length - 1; i >= 0; i--) {
     for (let j = 0; j < files.length; j++) {
-      board.push(<Square number={i + j} name={`${files[j]}${ranks[i]}`} />)
+      const squareID = `${files[j]}${ranks[i]}`
+      board.push(<Square number={i + j} name={squareID} key={squareID} />)
     }
   }
 
