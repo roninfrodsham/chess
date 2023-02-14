@@ -1,7 +1,12 @@
-import { Pawn, Knight, Bishop, Rook, Queen, King } from "./Pieces";
+import { HTMLAttributes } from 'react'
+import { Pawn, Knight, Bishop, Rook, Queen, King } from './Pieces'
+
+interface Props extends HTMLAttributes<SVGElement> {
+  colour: string;
+}
 
 type PieceComponentProps = {
-  [key: string]: React.FC;
+  [key: string]: React.FC<Props>;
 }
 
 type PieceProps = {
@@ -9,17 +14,16 @@ type PieceProps = {
   colour: string;
 }
 
-export default function Piece({piece, colour}: PieceProps) {
-  const PieceComponents: any = {
-    "Pawn": Pawn,
-    "Knight": Knight,
-    "Bishop": Bishop,
-    "Rook": Rook,
-    "Queen": Queen,
-    "King": King,
+export function Piece({piece, colour}: PieceProps) {
+  const PieceComponents: PieceComponentProps = {
+    'Pawn': Pawn,
+    'Knight': Knight,
+    'Bishop': Bishop,
+    'Rook': Rook,
+    'Queen': Queen,
+    'King': King,
   }
   const Component = PieceComponents[piece]
-  console.log(colour);
 
-  return <Component colour="light" />
+  return <Component colour={colour} />
 }

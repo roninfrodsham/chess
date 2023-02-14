@@ -1,12 +1,18 @@
-import "./Square.css"
-import Piece from "../Piece/Piece"
+import { Piece } from '../Piece/'
+import './Square.css'
 
 type props = {
   number: number;
   name: string;
+  piece?: string;
+  colour?: string;
 }
 
-export default function Square({number, name}: props) {
-  const squareColour = (number % 2 === 0) ? "dark" : "light"
-  return <div className={`square ${squareColour}`} data-square={name}><Piece piece="Pawn" colour="light" /></div>
+export function Square({number, name, piece, colour}: props) {
+  const squareColour = (number % 2 === 0) ? 'dark' : 'light'
+  return (
+    <div className={`square ${squareColour}`} data-square={name}>
+      {(piece !== "" && colour != "") && <Piece piece={piece} colour={colour} />}
+    </div>
+  )
 }

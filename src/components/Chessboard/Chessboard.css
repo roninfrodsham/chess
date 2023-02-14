@@ -14,17 +14,3 @@
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(8, 12.5%);
 }
-
-.square {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.light {
-  background-color: #aecdfe;
-}
-
-.dark {
-  background-color: #5390f4;
-}

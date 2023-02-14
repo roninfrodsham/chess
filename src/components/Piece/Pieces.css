@@ -1,0 +1,36 @@
+svg {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+  margin-bottom: 13%;
+}
+
+svg:hover {
+  cursor: grab;
+}
+
+svg:active {
+  cursor: grabbing;
+}
+
+.pawn {
+  height: 64%;
+}
+
+.knight {
+  height: 72%;
+}
+
+.bishop {
+  height: 72%;
+}
+
+.rook {
+  height: 72%;
+}
+
+.queen {
+  height: 76%;
+}
+
+.king {
+  height: 78%;
+}

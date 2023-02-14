@@ -1,4 +1,4 @@
-import Chessboard from './components/Chessboard/Chessboard'
+import { Chessboard } from './components/Chessboard/'
 
 import './App.css'
 
