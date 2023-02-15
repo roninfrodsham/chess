@@ -1,0 +1,39 @@
+.piece {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+}
+
+.piece:hover {
+  cursor: grab;
+}
+
+.piece:active {
+  cursor: grabbing;
+}
+
+.Pawn {
+  background-position: 50% 64%;
+  background-size: 50%;
+}
+
+.Rook {
+  background-size: 63%;
+}
+
+.Knight {
+  background-size: 70%;
+}
+
+.Bishop {
+  background-size: 70%;
+}
+
+.Queen {
+  background-size: 72%;
+}
+
+.King {
+  background-size: 72%;
+}

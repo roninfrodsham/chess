@@ -1,11 +1,11 @@
 .square {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
 }
 
 .light {
-  background-color: #aecdfe;
+  background-color: #92bbfd;
 }
 
 .dark {

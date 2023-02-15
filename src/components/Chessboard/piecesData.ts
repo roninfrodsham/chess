@@ -1,41 +1,104 @@
 export type PiecesProps = {
   [key: string]: {
     piece: string;
-    colour: string;
   }
 }
 
 export const pieceData: PiecesProps = {
-  a1: { piece: "Rook", colour: "light" },
-  b1: { piece: "Knight", colour: "light" },
-  c1: { piece: "Bishop", colour: "light" },
-  d1: { piece: "Queen", colour: "light" },
-  e1: { piece: "King", colour: "light" },
-  f1: { piece: "Bishop", colour: "light" },
-  g1: { piece: "Knight", colour: "light" },
-  h1: { piece: "Rook", colour: "light" },
-  a2: { piece: "Pawn", colour: "light" },
-  b2: { piece: "Pawn", colour: "light" },
-  c2: { piece: "Pawn", colour: "light" },
-  d2: { piece: "Pawn", colour: "light" },
-  e2: { piece: "Pawn", colour: "light" },
-  f2: { piece: "Pawn", colour: "light" },
-  g2: { piece: "Pawn", colour: "light" },
-  h2: { piece: "Pawn", colour: "light" },
-  a7: { piece: "Pawn", colour: "black" },
-  b7: { piece: "Pawn", colour: "black" },
-  c7: { piece: "Pawn", colour: "black" },
-  d7: { piece: "Pawn", colour: "black" },
-  e7: { piece: "Pawn", colour: "black" },
-  f7: { piece: "Pawn", colour: "black" },
-  g7: { piece: "Pawn", colour: "black" },
-  h7: { piece: "Pawn", colour: "black" },
-  a8: { piece: "Rook", colour: "black" },
-  b8: { piece: "Knight", colour: "black" },
-  c8: { piece: "Bishop", colour: "black" },
-  d8: { piece: "Queen", colour: "black" },
-  e8: { piece: "King", colour: "black" },
-  f8: { piece: "Bishop", colour: "black" },
-  g8: { piece: "Knight", colour: "black" },
-  h8: { piece: "Rook", colour: "black" },
+  a1: { 
+    piece: "RookWhite"
+  },
+  b1: { 
+    piece: "KnightWhite" 
+  },
+  c1: { 
+    piece: "BishopWhite" 
+  },
+  d1: { 
+    piece: "QueenWhite" 
+  },
+  e1: { 
+    piece: "KingWhite" 
+  },
+  f1: { 
+    piece: "BishopWhite" 
+  },
+  g1: { 
+    piece: "KnightWhite" 
+  },
+  h1: { 
+    piece: "RookWhite" 
+  },
+  a2: { 
+    piece: "PawnWhite" 
+  },
+  b2: { 
+    piece: "PawnWhite" 
+  },
+  c2: { 
+    piece: "PawnWhite" 
+  },
+  d2: { 
+    piece: "PawnWhite" 
+  },
+  e2: { 
+    piece: "PawnWhite"
+  },
+  f2: { 
+    piece: "PawnWhite" 
+  },
+  g2: { 
+    piece: "PawnWhite" 
+  },
+  h2: { 
+    piece: "PawnWhite" 
+  },
+  a7: { 
+    piece: "PawnBlack" 
+  },
+  b7: { 
+    piece: "PawnBlack" 
+  },
+  c7: { 
+    piece: "PawnBlack" 
+  },
+  d7: { 
+    piece: "PawnBlack" 
+  },
+  e7: { 
+    piece: "PawnBlack" 
+  },
+  f7: { 
+    piece: "PawnBlack" 
+  },
+  g7: { 
+    piece: "PawnBlack" 
+  },
+  h7: { 
+    piece: "PawnBlack" 
+  },
+  a8: { 
+    piece: "RookBlack" 
+  },
+  b8: { 
+    piece: "KnightBlack" 
+  },
+  c8: { 
+    piece: "BishopBlack" 
+  },
+  d8: { 
+    piece: "QueenBlack" 
+  },
+  e8: { 
+    piece: "KingBlack" 
+  },
+  f8: { 
+    piece: "BishopBlack" 
+  },
+  g8: { 
+    piece: "KnightBlack" 
+  },
+  h8: { 
+    piece: "RookBlack" 
+  },
 }
